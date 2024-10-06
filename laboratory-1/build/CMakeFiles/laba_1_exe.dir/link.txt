@@ -1,1 +1,0 @@
-/usr/local/bin/c++  -Werror=maybe-uninitialized CMakeFiles/laba_1_exe.dir/main.cpp.o -o laba_1_exe  liblaba_1_lib.a 
