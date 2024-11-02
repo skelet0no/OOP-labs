@@ -23,7 +23,7 @@ Rhombus& Rhombus::operator=(const Rhombus& other) {
 }
 
 std::vector<std::pair<double, double>> Rhombus::vertices() const {
-    double section = std::sqrt(std::pow(side, 2) - std::pow(height, 2));
+    double section = std::sqrt(side * side - height * height);
     return {
         {0, 0},
         {side, 0},
@@ -47,7 +47,7 @@ Rhombus::operator double() const {
 }
 
 std::pair<double, double> Rhombus::center() const {
-    double section = std::sqrt(std::pow(side, 2) - std::pow(height, 2));
+    double section = std::sqrt(side * side - height * height);
     return { (side + section) / 2.0, height / 2.0 };
 }
 
